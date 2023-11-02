@@ -1,0 +1,24 @@
+<div class="game-container">
+  <div class="grid">
+    <div *ngFor="let cell of cells; let i = index"
+      [ngClass]="getCellClass(i)"
+      (click)="cellClicked(i)">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="cell">
+      <span>Player</span>
+      <div class="score green">{{ playerScore }}</div>
+    </div>
+    <div class="cell central-cell">
+      <button (click)="startGame()">Start</button>
+      <div class="delay">Delay(ms) :</div>
+      <input type="number" [(ngModel)]="timeLimit" placeholder="Delay ms" min=0>
+    </div>
+    <div class="cell">
+      <span>Computer</span>
+      <div class="score red"> {{ computerScore }}</div>
+    </div>
+  </div>
+</div>

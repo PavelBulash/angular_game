@@ -1,0 +1,121 @@
+.game-container {
+  text-align: center;
+  margin: 20px;
+  width: 545px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
+  background-color: rgb(228, 228, 228);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-gap: 5px;
+}
+
+.grid div {
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.grid div.yellow {
+  background-color: var(--yellow);
+}
+
+.grid div.green {
+  background-color: var(--green);
+}
+
+.grid div.red {
+  background-color: var(--red);
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--success);
+  border: none;
+  border-radius: 4px;
+  color: var(--button-text);
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--success-hover);
+}
+
+input {
+  width: 80px;
+  margin: 0 10px 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style for the result modal */
+mat-dialog-container {
+  text-align: center;
+}
+
+mat-dialog-content {
+  font-size: 18px;
+}
+
+mat-dialog-actions {
+  justify-content: center;
+}
+
+mat-dialog-title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 200px;
+  margin: 10px;
+  height: auto;
+  font-size: 20px;
+}
+
+.delay {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.central-cell {
+  width: 200px;
+  height: auto;
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.green {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red)
+}

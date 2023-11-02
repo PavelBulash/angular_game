@@ -1,0 +1,34 @@
+/* Colors */
+:root {
+  --blue: blue;
+  --yellow: yellow;
+  --green: green;
+  --red: red;
+  --background: #f0f0f0;
+  --border: #333;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --success: #4caf50;
+  --success-hover: #45a049;
+  --text: #000;
+  --button-text: white;
+  --modal-background: #fff;
+}
+
+:host {
+  --blue: blue;
+  --yellow: yellow;
+  --green: green;
+  --red: red;
+  --background: #f0f0f0;
+  --border: #333;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --success: #4caf50;
+  --success-hover: #45a049;
+  --text: #000;
+  --button-text: white;
+  --modal-background: #fff;
+}
+
+body {
+  background-color: red;
+}

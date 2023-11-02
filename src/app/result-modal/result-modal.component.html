@@ -1,0 +1,9 @@
+<h2 mat-dialog-title>Game Results</h2>
+<mat-dialog-content>
+  <p *ngIf="data.playerScore > data.computerScore">Congratulations! <br/> You won with {{ data.playerScore }} points!</p>
+  <p *ngIf="data.computerScore > data.playerScore">The computer won with {{ data.computerScore }} points.</p>
+  <p *ngIf="data.playerScore === data.computerScore">It's a tie with {{ data.playerScore }} points each.</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="true">Restart</button>
+</mat-dialog-actions>
